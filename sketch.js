@@ -30,6 +30,7 @@ function setup() {
   
 function draw() {
     background(200);
+    cam.setPosition(0,-900,2000)
     board()
     paddles()
     ball()
