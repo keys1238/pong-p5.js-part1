@@ -16,7 +16,6 @@ function preload(){
 function setup() {
     createCanvas(windowWidth - 25, windowHeight - 25, WEBGL);
     cam = createCamera()
-    cam.setPosition(0,-900,2000)
 
     t = createGraphics(windowWidth - 25,windowHeight)
 
@@ -25,12 +24,12 @@ function setup() {
     b = new Sphere(0,-20,0,20)
     bot = new Box(b.x,-35,-1000,80,50,30)
     player = new Box(x,-35,1000,80,50,30)
-    cam.lookAt(0,0,0)
 }
   
 function draw() {
     background(200);
     cam.setPosition(0,-900,2000)
+    cam.lookAt(0,0,0)
     board()
     paddles()
     ball()
@@ -57,6 +56,3 @@ function m(){
         x = x + (s + 3)
     }
 }
-function windowResized() {
-    resizeCanvas(windowWidth - 25, windowHeight - 25);
-}  
