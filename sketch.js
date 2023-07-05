@@ -18,7 +18,7 @@ function setup() {
     cam = createCamera()
     cam.setPosition(0,-900,2000)
 
-    t = createGraphics(windowWidth,windowHeight)
+    t = createGraphics(windowWidth - 25,windowHeight)
 
     ground = new Box(0,0,0,900,0,2000)
     diagonal = new Box(0,-2,0,10,0,2000)
